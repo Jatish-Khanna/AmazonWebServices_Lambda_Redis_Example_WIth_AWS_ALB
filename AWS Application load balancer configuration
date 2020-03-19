@@ -1,0 +1,15 @@
+
+1) Make a AWS application load balancer under EC2 category
+2) Create new Target group for the load balancing
+  a) Target group should have target Lambda
+3) Add new HTTP(80) or HTTPs(443) listner in the application load balancer
+4) Add new rule for the context based routing - ()
+  a) Route based on the PATH
+  b) Forward the request to Target group
+  
+5) Load balancer should forward the request the Lambda
+6) Check the Cloud watch -> Log groups ()
+7) Select the Lambda and view if the request is received over the Lambda
+
+
+Note: The AWS application load balancer should respond with specific attributes, and BODY should be String not any other object
